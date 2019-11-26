@@ -22,7 +22,7 @@
         Le responsable publication est une personne physique ou une personne morale.<br>
         <strong>Webmaster</strong> : Halavent – halavant.carnex@gmail.com<br>
         <strong>Hébergeur</strong> : Locolhost – 24 place saint marc 76000 Rouen X<br>
-        <strong>Délégué à la protection des données</strong> : Vasseur – vasseur.carnex@gmail.com<br>
+        <strong>Délégué à la protection des données</strong> : Vasseur – vasseur.carnex@gmail.comm<br>
         </p>
 
     <div ng-bind-html="linkHTML"><p>Les mentions légales sont issues du modèle proposé par le  <a href="https://fr.orson.io/1371/generateur-mentions-legales" title="générateur gratuit offert par Orson.io">générateur gratuit offert par Orson.io</a></p></div>
