@@ -19,10 +19,19 @@
 h4#titre {
   float: left;
   padding-top: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: darkslateblue;
 }
-
+h4#titre span {
+    float: left;
+    font-weight: normal;
+    font-size: 0.9em;
+    font-style: italic;
+    color: lightseagreen;
+}
 body {
-font-family: 'Mukta+Malar', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   background-color: #fff;
 }
 
@@ -31,6 +40,7 @@ header nav ul li a {
   text-align: center;
   color: white;
   font-size: 1em;
+    font-weight: bold;
   background-color: darkslateblue;
   text-decoration: none;
   padding:10px 10px 10px 10px;
@@ -52,6 +62,7 @@ header .icones p {
     float: left;
     padding-top: 20px;
     padding-left: 10px;
+    font-size: 0.9em;
 }
 
 header .icones {
@@ -155,6 +166,9 @@ img#imagemed {
     padding-top: 80px;
     padding-bottom: 50px;
     font-size: 1.7em;
+    font-weight: normal;
+    line-height: 60px;
+    color: lightseagreen;
 }
 
 #bienvenue h2 span {
@@ -163,8 +177,13 @@ img#imagemed {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 2em;
+    font-weight: bold;
+    color: darkslateblue;
 }
-
+#bienvenue h3 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
 #bienvenue .section2 p {
 
     padding-top: 30px;
@@ -199,27 +218,32 @@ hr{
     padding-top: 50px;
 }
 #equipe .section1 img {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 15px;
 }
 #equipe h2 {
     font-size: 1.8em;
+    font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
+    color: darkslateblue;
 }
 
 #equipe h3 {
+    font-weight: bold;
     font-size: 1.3em;
     text-align: center;
     text-transform: uppercase;
     padding-top: 50px;
+    color: lightseagreen;
 }
 
 #equipe p {
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer .wrap {

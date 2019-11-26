@@ -13,7 +13,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
     <div class="wrap">
       <div class="log">
         <img id="logo" src="assets/img/logov2.png" alt="logo">
-        <h4 id="titre">Carnax<br>Les vaccins connectés</h4>
+        <h4 id="titre">Carnax<br><span>Les vaccins connectés</span></h4>
       </div>
       <div class="icones">
         <div class="">
