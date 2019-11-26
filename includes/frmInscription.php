@@ -5,7 +5,7 @@ if (!isset($mail)) $mail = "";
 if (!isset($role)) $role = "";
 
 ?>
-<form method="post" action="index.php?page=inscriptions">
+<form method="post" class="form-wrap" action="index.php?page=inscriptions">
     <div>
         <label for="nom">Nom&nbsp;: </label>
         <input type="text" id="nom" name="nom" value="<?= $nom ?>"/>
