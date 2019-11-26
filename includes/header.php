@@ -47,7 +47,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
                     echo '<li class="nav-item"><a href="index.php?page=logout" class="nav-link js-scroll-trigger">Logout</a></li>';
                 } else {
 
-                    echo '<li><a>Mon compte</a></li>';
+                    echo '<li><a href="index.php?page=monCompte">Mon compte</a></li>';
                     echo '<li><a href="index.php?page=logout" >Logout</a></li>';
                 }
 
