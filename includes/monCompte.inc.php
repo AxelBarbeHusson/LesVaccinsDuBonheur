@@ -1,7 +1,7 @@
 <?php
 $errors = array();
 $success = false;
-if (!empty ($_GET['id']) && is_numeric($_GET['id'])) {
+if (!empty ($_GET['Id_USERS']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
 
 //Select=colonne; FROM= table; WHERE -> col1 = valeur; AND col2 = valeur2; ORDER BY = col ASC/DESC ; LIMIT = combien;
@@ -9,9 +9,9 @@ if (!empty ($_GET['id']) && is_numeric($_GET['id'])) {
             WHERE ID = $id";
     $query = $pdo->prepare($sql);
     $query->execute();
-    $users = $query->fetch();
+    $user = $query->fetch();
     //debug($citys);
-    if (!empty($users)) {
+    if (!empty($user)) {
         if (!empty($_POST['submitted'])) {
             //debug($_POST);
             $nom = isset($_POST['nom']) ? clean($_POST['nom']) : "";
@@ -47,8 +47,10 @@ if (!empty ($_GET['id']) && is_numeric($_GET['id'])) {
 
 } else {
    // die('404');
+
+    debug($_GET['id']);
 }
-//debug($citys);
+
 
 ?>
 <?php if ($success) { ?>
@@ -58,8 +60,8 @@ if (!empty ($_GET['id']) && is_numeric($_GET['id'])) {
         <fieldset>
             <div>
                 <label for="nom">Votre nom :</label>
-                <input type="text" id="nom" name="nom" value="<?php if (!empty($_POST['nom'])) {
-                    echo $_POST['nom'];
+                <input type="text" id="nom" name="nom" value="<?php if (!empty($_GET['nom'])) {
+                    echo $_GET['nom'];
                 } else {
                     echo $users['USENOM'];
                 } ?>">
