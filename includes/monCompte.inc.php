@@ -1,17 +1,12 @@
 <?php
+
 $errors = array();
 $success = false;
-if (!empty ($_GET['Id_Users']) && is_numeric($_GET['Id_Users'])) {
-    $id = $_GET['Id_Users'];
 
-//Select=colonne; FROM= table; WHERE -> col1 = valeur; AND col2 = valeur2; ORDER BY = col ASC/DESC ; LIMIT = combien;
-    $sql = "SELECT * FROM t_users 
-            WHERE ID = $id";
-    $query = $pdo->prepare($sql);
-    $query->execute();
-    $users = $query->fetch();
+//if (!empty ($_GET['Id_Users']) && is_numeric($_GET['Id_Users'])) {
+
     //debug($citys);
-    if (!empty($users)) {
+    //if (!empty($users)) {
         if (!empty($_POST['submitted'])) {
             //debug($_POST);
             $nom = isset($_POST['nom']) ? clean($_POST['nom']) : "";
@@ -25,83 +20,60 @@ if (!empty ($_GET['Id_Users']) && is_numeric($_GET['Id_Users'])) {
             // no error
             if (count($errors) == 0) {
                 // insert into
+                $id = $_SESSION['login']['id'];
                 $success = true;
 
                 $sql = "UPDATE t_users
-               SET USENOM = :nom, USEPRENOM = :prenom, USEMAIL = :mail, USEPASSWORD = :password
+               SET USENOM = :nom, USEPRENOM = :prenom, USEMAIL = :mail, USEPASSWORD = :password, modifAt = NOW()
                WHERE Id_Users = $id";
                 $query = $pdo->prepare($sql);
                 $query->bindValue(':nom', $nom, PDO::PARAM_STR);
                 $query->bindValue(':prenom', $prenom, PDO::PARAM_STR);
-                $query->bindValue(':mail', $mail, PDO::PARAM_INT);
-                $query->bindValue(':password', $mdp, PDO::PARAM_INT);
+                $query->bindValue(':mail', $mail, PDO::PARAM_STR);
+                $query->bindValue(':password', password_hash($mdp, PASSWORD_DEFAULT), PDO::PARAM_STR);
 
                 $query->execute();
 
 
             }
         }
-    } else {
-        //die('404');
-    }
-
-} else {
-   // die('404');
-
-    debug($users);
-}
 
 
-?>
-<?php if ($success) { ?>
-    <p class="success">Vous avez bien modifier vos information</p>
-<?php } else { ?>
+
+
+
+    debug($_SESSION);
+    $id = $_SESSION['login']['id'];
+
+//Select=colonne; FROM= table; WHERE -> col1 = valeur; AND col2 = valeur2; ORDER BY = col ASC/DESC ; LIMIT = combien;
+    $sql = "SELECT * FROM t_users 
+            WHERE Id_Users = $id";
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    $users = $query->fetch();
+
+    ?>
     <form method="post" action="">
         <fieldset>
             <div>
                 <label for="nom">Votre nom :</label>
-                <input type="text" id="nom" name="nom" value="<?php if (!empty($_GET['nom'])) {
-                    echo $_GET['nom'];
-                } else {
-                    echo $users['USENOM'];
-                } ?>">
-                <span class="error"><?php if (!empty($errors['nom'])) {
-                        echo $errors['nom'];
-                    }
-                    ?></span>
+                <input type="text" id="nom" name="nom" value="">
+
             </div>
             <div>
                 <label for="prenom">Votre prenom :</label>
-                <input type="text" id="prenom" name="prenom" value="<?php if (!empty($_GET['prenom'])) {
-                    echo $_GET['prenom'];
-                } else {
-                    echo $users['USEPRENOM'];
-                } ?>">
-                <span class="error"><?php if (!empty($errors['code'])) {
-                        echo $errors['prenom'];
-                    } ?></span>
+                <input type="text" id="prenom" name="prenom" value="">
+
             </div>
             <div>
                 <label for="mail">Votre mail :</label>
-                <input type="email" id="mail" name="mail" value="<?php if (!empty($_GET['mail'])) {
-                    echo $_GET['mail'];
-                } else {
-                    echo $users['USEMAIL'];
-                } ?>">
-                <span class="error"><?php if (!empty($errors['mail'])) {
-                        echo $errors['mail'];
-                    } ?></span>
+                <input type="email" id="mail" name="mail" value="">
+
             </div>
             <div>
                 <label for="mdp">Votre mot de passe :</label>
-                <input type="password" id="population" name="population" value="<?php if (!empty($_GET['mdp'])) {
-                    echo $_GET['mdp'];
-                } else {
-                    echo $citys['USEPASSWORD'];
-                } ?>">
-                <span class="error"><?php if (!empty($errors['mdp'])) {
-                        echo $errors['mdp'];
-                    } ?></span>
+                <input type="password" id="mdp" name="mdp" value="">
+
             </div>
 
             <div>
@@ -111,5 +83,5 @@ if (!empty ($_GET['Id_Users']) && is_numeric($_GET['Id_Users'])) {
         </fieldset>
         <input type="hidden" name="test"/>
     </form>
-<?php } ?>
+
 
