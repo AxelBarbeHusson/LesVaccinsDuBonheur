@@ -11,7 +11,7 @@ if (!isset($date)) $date = "";
 if (!isset($msg)) $msg = "";
 ?>
 
-<form method="post" action="index.php?page=rendezVous">
+<form method="post" class="form-wrap" action="index.php?page=rendezVous">
     <fieldset>
         <div>
             <label for="nom">Nom :</label>
