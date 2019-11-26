@@ -45,10 +45,13 @@ header nav ul li a {
 header .icones img {
   width: 50px;
   height: 50px;
+    float: left;
 
 }
 header .icones p {
-
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 header .icones {
@@ -126,13 +129,59 @@ img#imagemed {
   color: #309488;
 }
 
-
-#equipe{
+#bienvenue{
   color: #000;
   background-color: #fff;
   width: 100%;
-  float: right;
+  float: left;
 }
+
+#bienvenue .section2 {
+  float: left;
+  width: 50%;
+  color: #000;
+  text-align: center;
+}
+
+#bienvenue .section2 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+#bienvenue h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 1.7em;
+}
+
+#bienvenue h2 span {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#bienvenue .section2 p {
+
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+hr{
+    width: 50%;
+    height: 2px;
+    background-color: lightseagreen;
+    border: none;
+
+}
+
 #equipe .section1 {
   float: left;
   width: 25%;
@@ -141,18 +190,37 @@ img#imagemed {
   text-align: center;
   /*overflow: auto;*/
 }
-
+#equipe {
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    float: right;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
 #equipe .section1 img {
   width: 200px;
   height: 300px;
   border-radius: 15px;
 }
 #equipe h2 {
+    font-size: 1.8em;
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
 }
 
+#equipe h3 {
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+#equipe p {
+    text-align: center;
+    padding-top: 30px;
+}
 
 footer .wrap {
   max-width: 1350px;
@@ -163,8 +231,10 @@ footer .wrap {
 .page-footer {
   color: #fff;
   font-size: .75em;
-  background-color: darkslateblue;
+  background-color: lightseagreen;
   width:100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 .page-footer a {
@@ -247,4 +317,8 @@ footer .wrap {
 }
 .footernav li {
   display: inline-block;
+}
+
+.bottom-bar {
+    padding-top: 20px;
 }
