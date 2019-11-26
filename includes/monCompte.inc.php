@@ -1,17 +1,17 @@
 <?php
 $errors = array();
 $success = false;
-if (!empty ($_GET['Id_USERS']) && is_numeric($_GET['id'])) {
-    $id = $_GET['id'];
+if (!empty ($_GET['Id_Users']) && is_numeric($_GET['Id_Users'])) {
+    $id = $_GET['Id_Users'];
 
 //Select=colonne; FROM= table; WHERE -> col1 = valeur; AND col2 = valeur2; ORDER BY = col ASC/DESC ; LIMIT = combien;
     $sql = "SELECT * FROM t_users 
             WHERE ID = $id";
     $query = $pdo->prepare($sql);
     $query->execute();
-    $user = $query->fetch();
+    $users = $query->fetch();
     //debug($citys);
-    if (!empty($user)) {
+    if (!empty($users)) {
         if (!empty($_POST['submitted'])) {
             //debug($_POST);
             $nom = isset($_POST['nom']) ? clean($_POST['nom']) : "";
@@ -29,7 +29,7 @@ if (!empty ($_GET['Id_USERS']) && is_numeric($_GET['id'])) {
 
                 $sql = "UPDATE t_users
                SET USENOM = :nom, USEPRENOM = :prenom, USEMAIL = :mail, USEPASSWORD = :password
-               WHERE ID = $id";
+               WHERE Id_Users = $id";
                 $query = $pdo->prepare($sql);
                 $query->bindValue(':nom', $nom, PDO::PARAM_STR);
                 $query->bindValue(':prenom', $prenom, PDO::PARAM_STR);
@@ -48,7 +48,7 @@ if (!empty ($_GET['Id_USERS']) && is_numeric($_GET['id'])) {
 } else {
    // die('404');
 
-    debug($_GET['id']);
+    debug($users);
 }
 
 
