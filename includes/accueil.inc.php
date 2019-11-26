@@ -29,25 +29,25 @@
             <!--      <img src="assets/img/corgi.jpg" alt="Un membre de l'équipe.">-->
             <h3>Mélanie </h3>
             <p>Développeur WEB à NFactory</p>
-            <img src="assets/img/intruse.jpg" alt="">
+            <img src="assets/img/avmelie.png" alt="">
         </div>
         <div class="section1">
             <!--      <img src="assets/img/corgi.jpg" alt="Un membre de l'équipe.">-->
             <h3>Thomas</h3>
             <p>Développeur WEB à NFactory</p>
-            <img src="assets/img/intruse.jpg" alt="">
+            <img src="assets/img/avthomas.png" alt="">
         </div>
         <div class="section1">
             <!--      <img src="assets/img/corgi.jpg" alt="Un membre de l'équipe.">-->
             <h3>Pierre</h3>
             <p>Développeur WEB à NFactory</p>
-            <img src="assets/img/intruse.jpg" alt="">
+            <img src="assets/img/avpierre.png" alt="">
         </div>
         <div class="section1">
             <!--      <img src="assets/img/corgi.jpg" alt="Un membre de l'équipe.">-->
             <h3>Axel</h3>
             <p>Développeur WEB à NFactory</p>
-            <img src="assets/img/intruse.jpg" alt="">
+            <img src="assets/img/avsucre.png" alt="">
         </div>
         <!--  --><div class="clear">
         </div>
