@@ -38,22 +38,32 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
                 <li><a target="_blank"
                    href="https://solidarites-sante.gouv.fr/IMG/pdf/calendrier_vaccinal_maj_17avril2019.pdf">Liens
                     vaccins</a></li>
-                <li><a href="index.php?page=inscriptions">inscription</a></li>
-                <li><a href="index.php?page=login">connexion</a></li>
+                <?php
+                //debug($_SESSION);
+
+                if(idAdmin()) {
+                    echo '<li><a href="index.php?page=admin" >Pannel Admin</a></li>';
+                    echo '<li><a href="index.php?page=logout" >Logout</a></li>';
+
+                }else {
+
+                    echo '<li><a>Mon compte</a></li>';
+                    echo '<li><a href="index.php?page=logout">Logout</a></li>';
+                }
+                ?>
               </ul>
 
         </nav>
 
         <?php
         if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
-            echo "<li class=\"nav-item\"><a href=\"index.php?page=rendezvous\" class=\"nav-link js-scroll-trigger\">Rendez-vous</a></li>";
-            echo "<li class=\"nav-item\"><a href=\"index.php?page=logout\" class=\"nav-link js-scroll-trigger\">Logout</a></li>";
+            echo '<li class="nav-item"><a href="index.php?page=logout" class="nav-link js-scroll-trigger">Logout</a></li>';
         } else {
             if (isset($_POST['inscr'])) {
                 $mail = isset($_POST['mail']) ? $_POST['mail'] : "";
                 $sql = "SELECT COUNT(*) FROM carnaxadmin WHERE MailAdmin='" . $mail . "'";
                 if (idAdmin <= 1) {
-                    echo "<li class=\"nav-item\"><a href=\"index.php?page=inscriptions\" class=\"nav-link js-scroll-trigger\">Inscription</a></li>";
+                    echo '<li class="nav-item"><a href="index.php?page=inscriptions" class="nav-link js-scroll-trigger">Inscription</a></li>';
                 }
             }
         }
