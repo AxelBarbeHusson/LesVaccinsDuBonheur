@@ -1,4 +1,3 @@
-
 <?php
 if (isset($_POST['barnabe'])) {
     $mail = isset($_POST['mail']) ? clean($_POST['mail']) : "";
@@ -23,29 +22,46 @@ if (isset($_POST['barnabe'])) {
         $getDatas = "SELECT * FROM t_users WHERE USEMAIL='" . $mail . "'";
         $result = $pdo->query($getDatas)->fetch(PDO::FETCH_ASSOC);
 
-            if(!empty($result)) {
+        if (!empty($result)) {
 
 
+            $hash = $result['USEPASSWORD'];
+            if (password_verify($mdp, $hash)) {
+                $_SESSION['login'] = array(
+                    'id' => $result['id_Users'],
+                    'email' => $result['USEMAIL'],
+                    'role' => $result['role'],
+                    'ip' => $_SERVER['REMOTE_ADDR']
+                );
+                header('Location: index.php');
+                //$redirection = "<script>document.location.href='http://localhost/carnex'</script>";
 
-                $hash = $result['USEPASSWORD'];
-                if (password_verify($mdp, $hash)) {
-                    $_SESSION['login'] = array(
-                        'id' => $result['id_Users'],
-                        'email' => $result['USEMAIL'],
-                        'role'  => $result['role'],
-                        'ip' => $_SERVER['REMOTE_ADDR']
-                    );
-                    header('Location: index.php');
-                    //$redirection = "<script>document.location.href='http://localhost/carnex'</script>";
+                echo "Vous êtes maintenant connecté";
 
-                    echo "Vous êtes maintenant connecté";
+            } else {
+                echo "L'adresse et le mot de passe ne correspondent pas !";
+            }
+            /*$mdp = password_verify($mdp, $hash);
+            $sql = "SELECT COUNT(*) FROM t_users WHERE USEMAIL='". $mail . "' AND USEPASSWORD ='" . $mdp . "''";
+            $nombreOccurences = $pdo->query($sql)->fetchColumn();*/
+        }
+    }
+}
+if (!isset($mail)) $mail = "";
+if (!isset($mdp)) $mdp = "";
+?>
 
-                } else {
-                    echo "L'adresse et le mot de passe ne correspondent pas !";
-                }
-        /*$mdp = password_verify($mdp, $hash);
-        $sql = "SELECT COUNT(*) FROM t_users WHERE USEMAIL='". $mail . "' AND USEPASSWORD ='" . $mdp . "''";
-        $nombreOccurences = $pdo->query($sql)->fetchColumn();*/
-    }else {
-                require_once "frmLogin.php";}
-}}
+<form method="post" action="" class="form-wrap">
+    <h1>Login</h1>
+    <label for="mail"><b>Email :</b></label>
+    <input type="text" placeholder="Entrez votre Email" id="mail" name="mail" required value="<?= $mail ?>">
+    <label for="mdp"><b>Mot de passe :</b></label>
+    <input type="password" placeholder="Saisir le mot de passe" id="mdp" value="<?= $mdp ?>" name="mdp"
+           required>
+    <div>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Reset">
+    </div>
+
+    <input type="hidden" name="barnabe"/>
+</form>
