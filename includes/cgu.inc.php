@@ -1,38 +1,38 @@
 
 <div class="wrap">
     <section id="CGU">
-<h2>Définitions</h2>
-<p><b>Client&nbsp;:</b>&nbsp;tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
-    <b>Prestations et Services&nbsp;:</b> <a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a> met à disposition des Clients&nbsp;:</p>
+        <h2>Définitions</h2>
+        <p><b>Client&nbsp;:</b>&nbsp;tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
+        <b>Prestations et Services&nbsp;:</b> <a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a> met à disposition des Clients&nbsp;:</p>
 
-<p><b>Contenu&nbsp;:</b>&nbsp;Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.</p>
+        <p><b>Contenu&nbsp;:</b>&nbsp;Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.</p>
 
-<p><b>Informations clients&nbsp;:</b> Ci après dénommé «&nbsp;Information (s)&nbsp;» qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par <a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a> pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.</p>
-
-
-<p><b>Utilisateur :</b> Internaute se connectant, utilisant le site susnommé.</p>
-<p><b>Informations personnelles :</b> « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
-<p>Les termes «&nbsp;données à caractère personnel&nbsp;», «&nbsp;personne concernée&nbsp;», «&nbsp;sous traitant&nbsp;» et «&nbsp;données sensibles&nbsp;» ont le sens défini par le Règlement Général sur la Protection des Données (RGPD&nbsp;: n° 2016-679)</p>
-
-<h2>1. Présentation du site internet.</h2>
-<p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet&nbsp;<a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a>&nbsp;l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
-</p><p><strong>Propriétaire</strong> :  SAS Les Vaccins du Bonheurs Capital social de 0€  – 24 place saint-marc 76000 Rouen<br>
-
-    <strong>Responsable publication</strong> : Barbé--Husson – barbehusson.carnex@gmail.com<br>
-    Le responsable publication est une personne physique ou une personne morale.<br>
-    <strong>Webmaster</strong> : Halavent – halavant.carnex@gmail.com<br>
-    <strong>Hébergeur</strong> : Locolhost – 24 place saint marc 76000 Rouen X<br>
-    <strong>Délégué à la protection des données</strong> : Vasseur – vasseur.carnex@gmail.com<br>
-</p>
-
-<div ng-bind-html="linkHTML"><p>Les mentions légales sont issues du modèle proposé par le  <a href="https://fr.orson.io/1371/generateur-mentions-legales" title="générateur gratuit offert par Orson.io">générateur gratuit offert par Orson.io</a></p></div>
+        <p><b>Informations clients&nbsp;:</b> Ci après dénommé «&nbsp;Information (s)&nbsp;» qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par <a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a> pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.</p>
 
 
+        <p><b>Utilisateur :</b> Internaute se connectant, utilisant le site susnommé.</p>
+        <p><b>Informations personnelles :</b> « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+        <p>Les termes «&nbsp;données à caractère personnel&nbsp;», «&nbsp;personne concernée&nbsp;», «&nbsp;sous traitant&nbsp;» et «&nbsp;données sensibles&nbsp;» ont le sens défini par le Règlement Général sur la Protection des Données (RGPD&nbsp;: n° 2016-679)</p>
 
-<h2>2. Conditions générales d’utilisation du site et des services proposés.</h2>
+        <h2>1. Présentation du site internet.</h2>
+        <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet&nbsp;<a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a>&nbsp;l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
+        </p><p><strong>Propriétaire</strong> :  SAS Les Vaccins du Bonheurs Capital social de 0€  – 24 place saint-marc 76000 Rouen<br>
 
-<p>Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables.
-    Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.</p>
+        <strong>Responsable publication</strong> : Barbé--Husson – barbehusson.carnex@gmail.com<br>
+        Le responsable publication est une personne physique ou une personne morale.<br>
+        <strong>Webmaster</strong> : Halavent – halavant.carnex@gmail.com<br>
+        <strong>Hébergeur</strong> : Locolhost – 24 place saint marc 76000 Rouen X<br>
+        <strong>Délégué à la protection des données</strong> : Vasseur – vasseur.carnex@gmail.com<br>
+        </p>
+
+    <div ng-bind-html="linkHTML"><p>Les mentions légales sont issues du modèle proposé par le  <a href="https://fr.orson.io/1371/generateur-mentions-legales" title="générateur gratuit offert par Orson.io">générateur gratuit offert par Orson.io</a></p></div>
+
+
+
+        <h2>2. Conditions générales d’utilisation du site et des services proposés.</h2>
+
+        <p>Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables.
+            Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.</p>
 
 <p>L’utilisation du site&nbsp;<a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a>&nbsp;implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site&nbsp;<a href="http://localhost/carnex/Carnax/">http://localhost/carnex/Carnax/</a>&nbsp;sont donc invités à les consulter de manière régulière.</p>
 

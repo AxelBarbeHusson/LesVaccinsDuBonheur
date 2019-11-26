@@ -188,8 +188,8 @@ img#imagemed {
 
     padding-top: 30px;
     padding-bottom: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 
@@ -345,4 +345,12 @@ footer .wrap {
 
 .bottom-bar {
     padding-top: 20px;
+}
+
+
+///////////////////////////////////////
+///////////
+
+#CGU h2 {
+    font-weight: bold;
 }
