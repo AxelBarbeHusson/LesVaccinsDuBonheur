@@ -52,7 +52,7 @@ if (!isset($mail)) $mail = "";
 if (!isset($mdp)) $mdp = "";
 ?>
 
-<form method="post" action="" class="form-wrap">
+<form id="login" method="post" action="" class="form-wrap">
     <h1>Login</h1>
     <label for="mail"><b>Email :</b></label>
     <input type="text" placeholder="Entrez votre Email" id="mail" name="mail" required value="<?= $mail ?>">
