@@ -8,6 +8,7 @@ $title = 'show users';
 $sql = "SELECT * FROM t_users
         WHERE 1";
 
+
 $query = $pdo->prepare($sql);
 $query->execute();
 $users = $query->fetchAll();

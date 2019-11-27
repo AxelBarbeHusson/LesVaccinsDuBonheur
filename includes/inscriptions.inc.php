@@ -32,8 +32,8 @@ if (isset($_POST['maurice'])) {
         if ($nombreOccurences == 0) {
             $mdp = password_hash($mdp, PASSWORD_DEFAULT);
             $sql = "INSERT INTO t_users
-                (USENOM, USEPRENOM, USEMAIL, USEPASSWORD,role)
-                VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail . "', '" . $mdp . "', '" . $role . "')";
+                (USENOM, USEPRENOM, USEMAIL, USEPASSWORD,role,createdAt)
+                VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail . "', '" . $mdp . "', '" . "Users" . "',NOW())";
             $role = 'Users';
             $query = $pdo->prepare($sql);
             $query->bindValue('USENOM', $nom, PDO::PARAM_STR);
