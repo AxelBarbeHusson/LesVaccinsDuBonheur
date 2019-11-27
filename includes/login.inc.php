@@ -59,6 +59,7 @@ if (!isset($mdp)) $mdp = "";
     <label for="mdp"><b>Mot de passe :</b></label>
     <input type="password" placeholder="Saisir le mot de passe" id="mdp" value="<?= $mdp ?>" name="mdp"
            required>
+    <a><button>Mot de passe oubliés ?</button></a>
     <div>
         <input type="submit" value="Envoyer">
         <input type="reset" value="Reset">
