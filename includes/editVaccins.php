@@ -1,6 +1,5 @@
 <?php
-include('includes/pdo.php');
-include('index.php');
+
 $errors = array();
 $success = false;
 if(!empty($_GET['id']) && is_numeric($_GET['id'])) {
@@ -28,7 +27,7 @@ if(!empty($_GET['id']) && is_numeric($_GET['id'])) {
                 $success = true;
                 // UPDATE SQL
                 $sql = "UPDATE vaccins
-          SET Name = :nom, Crée le = :created_at, Rappel 1 = :rappel1,Rappel 1 = :rappel2
+          SET nom = :nom, created_at = :created_at, rappel1 = :rappel1, rappel2 = :rappel2
           WHERE ID = $id";
                 $query = $pdo->prepare($sql);
                 $query->bindValue(':nom',$nom, PDO::PARAM_STR);
@@ -47,7 +46,7 @@ if(!empty($_GET['id']) && is_numeric($_GET['id'])) {
     die('404');
 }
 
-include('includes/header.php'); ?>
+ ?>
 
 <?php  if($success) { ?>
     <p>Bravo ma biche</p>
@@ -66,12 +65,11 @@ include('includes/header.php'); ?>
         <span class="error"><?php if(!empty($errors['rappel1'])) { echo $errors['rappel1']; } ?></span>
 
         <label for="population">Second rappel le*</label>
-        <input type="text" id="rappel2" name="rappel2" value="<?php if(!empty( $_POST['rappel1'])) {echo $_POST['rappel1'];}else {echo $ville['rappel1'];} ?>">
-        <span class="error"><?php if(!empty($errors['rappel1'])) { echo $errors['rappel1']; } ?></span>
+        <input type="text" id="rappel2" name="rappel2" value="<?php if(!empty( $_POST['rappel2'])) {echo $_POST['rappel2'];}else {echo $ville['rappel2'];} ?>">
+        <span class="error"><?php if(!empty($errors['rappel2'])) { echo $errors['rappel2']; } ?></span>
 
         <input type="submit" name="submitted" value="Envoyer">
 
     </form>
 <?php } ?>
 
-<?php include('footer.inc.php');
