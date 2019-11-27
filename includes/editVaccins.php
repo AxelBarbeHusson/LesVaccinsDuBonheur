@@ -9,7 +9,7 @@ if(!empty($_GET['id']) && is_numeric($_GET['id'])) {
           WHERE id = $id";
     $query = $pdo->prepare($sql);
     $query->execute();
-    $ville = $query->fetch();
+    $vaccins = $query->fetch();
     //debug($vaccins);
     if(!empty($vaccins)) {
 
@@ -53,19 +53,19 @@ if(!empty($_GET['id']) && is_numeric($_GET['id'])) {
 <?php } else { ?>
     <form action="" method="post">
         <label for="nom">Nom du Vaccin*</label>
-        <input type="text" id="nom" name="nom" value="<?php if(!empty( $_POST['nom'])) {echo $_POST['nom'];} else {echo $ville['Name'];} ?>">
+        <input type="text" id="nom" name="nom" value="<?php if(!empty( $_POST['nom'])) {echo $_POST['nom'];} else {echo $vaccins['Name'];} ?>">
         <span class="error"><?php if(!empty($errors['nom'])) { echo $errors['nom']; } ?></span>
 
         <label for="code">Modifier le*</label>
-        <input type="text" id="created_at" name="crated_at" value="<?php if(!empty( $_POST['created_at'])) {echo $_POST['created_at'];}else {echo $ville['Created_at'];} ?>">
+        <input type="text" id="created_at" name="crated_at" value="<?php if(!empty( $_POST['created_at'])) {echo $_POST['created_at'];}else {echo $vaccins['Created_at'];} ?>">
         <span class="error"><?php if(!empty($errors['created_at'])) { echo $errors['created_at']; } ?></span>
 
         <label for="district">Premier rappel le*</label>
-        <input type="text" id="rappel1" name="rappel1" value="<?php if(!empty( $_POST['rappel1'])) {echo $_POST['rappel1'];}else {echo $ville['rappel1'];} ?>">
+        <input type="text" id="rappel1" name="rappel1" value="<?php if(!empty( $_POST['rappel1'])) {echo $_POST['rappel1'];}else {echo $vaccins['rappel1'];} ?>">
         <span class="error"><?php if(!empty($errors['rappel1'])) { echo $errors['rappel1']; } ?></span>
 
         <label for="population">Second rappel le*</label>
-        <input type="text" id="rappel2" name="rappel2" value="<?php if(!empty( $_POST['rappel2'])) {echo $_POST['rappel2'];}else {echo $ville['rappel2'];} ?>">
+        <input type="text" id="rappel2" name="rappel2" value="<?php if(!empty( $_POST['rappel2'])) {echo $_POST['rappel2'];}else {echo $vaccins['rappel2'];} ?>">
         <span class="error"><?php if(!empty($errors['rappel2'])) { echo $errors['rappel2']; } ?></span>
 
         <input type="submit" name="submitted" value="Envoyer">
