@@ -7,7 +7,7 @@ if (!isset($apostal)) $apostal = "";
 if (!isset($cpostal)) $cpostal = "";
 if (!isset($ville)) $ville = "";
 if (!isset($phone)) $phone = "";
-if (!isset($date)) $date = "";
+
 if (!isset($msg)) $msg = "";
 ?>
 
@@ -48,10 +48,7 @@ if (!isset($msg)) $msg = "";
             <label for="sujet">Sujet :</label>
             <input type="text" id="sujet" name="sujet" value="<?= $sujet ?>"/>
         </div>
-        <div>
-            <label for="date">Date :</label>
-            <input type="date" id="date" name="date" value="<?= $date ?>"/>
-        </div>
+
         <div>
             <label for="msg">Message :</label>
             <textarea id="msg" name="msg" value="<?= $msg ?>">Votre message</textarea>

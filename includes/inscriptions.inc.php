@@ -4,6 +4,8 @@ if (isset($_POST['maurice'])) {
     $nom = isset($_POST['nom']) ? clean($_POST['nom']) : "";
     $prenom = isset($_POST['prenom']) ? clean($_POST['prenom']) : "";
     $mail = isset($_POST['mail']) ? clean($_POST['mail']) : "";
+    $date = isset($_POST['date']) ? clean($_POST['date']) : "";
+
     $mdp = isset($_POST['mdp']) ? clean($_POST['mdp']) : "";
     $role = isset($_POST['role']) ? clean($_POST['role']) : "";
 
@@ -32,14 +34,16 @@ if (isset($_POST['maurice'])) {
         if ($nombreOccurences == 0) {
             $mdp = password_hash($mdp, PASSWORD_DEFAULT);
             $sql = "INSERT INTO t_users
-                (USENOM, USEPRENOM, USEMAIL, USEPASSWORD,role,createdAt)
-                VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail . "', '" . $mdp . "', '" . "Users" . "',NOW())";
+                (USENOM, USEPRENOM, USEMAIL, USEPASSWORD,birthdate,role,createdAt)
+                VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail . "', '" . $mdp . "', '" . $date . "', '" . "Users" . "',NOW())";
             $role = 'Users';
             $query = $pdo->prepare($sql);
             $query->bindValue('USENOM', $nom, PDO::PARAM_STR);
             $query->bindValue('USEPRENOM', $prenom, PDO::PARAM_STR);
             $query->bindValue('USEMAIL', $mail, PDO::PARAM_STR);
             $query->bindValue('USEPASSWORD', $mdp, PDO::PARAM_STR);
+            $query->bindValue('USEPASSWORD', $mdp, PDO::PARAM_STR);
+            $query->bindValue('birthdate', $date, PDO::PARAM_STR);
             $query->execute();
             $msg = "Inscription Ok";
             $sujet = "Validation de votre inscription";

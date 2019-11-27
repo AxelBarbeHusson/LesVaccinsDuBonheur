@@ -1,6 +1,8 @@
 <?php
 if (!isset($nom)) $nom = "";
 if (!isset($prenom)) $prenom = "";
+if (!isset($date)) $date = "";
+
 if (!isset($mail)) $mail = "";
 if (!isset($role)) $role = "";
 
@@ -15,6 +17,10 @@ if (!isset($role)) $role = "";
         <input type="text" id="prenom" name="prenom" value="<?= $prenom ?>"/>
     </div>
     <div>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" value="<?= $date ?>"/>
+    </div>
+    <div>
         <label for="mail">Mail&nbsp;: </label>
         <input type="text" id="mail" name="mail" value="<?= $mail ?>"/>
     </div>
@@ -22,6 +28,7 @@ if (!isset($role)) $role = "";
         <label for="mdp">Mot de passe&nbsp;: </label>
         <input type="password" id="mdp" name="mdp"/>
     </div>
+
     <div>
         <input type="hidden"  value="<?php $role = 'Users'?>">
     </div>

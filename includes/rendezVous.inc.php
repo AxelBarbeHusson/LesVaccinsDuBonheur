@@ -39,7 +39,7 @@ if (isset($_POST['rdv'])) {
         if ($nombreOccurences == 0) {
             $sql = "INSERT INTO t_test
                 (USEMAIL, USEMESSAGE, USESUJET, USENOM, ID_USER , USEPRENOM, USEAPOSTAL, USECPOSTAL, USEVILLE, USEPHONE, USEDATE)
-                VALUES ('" . $mail . "', '" . $msg . "','" . $sujet . "','" . $nom . "','" . $USER . "','" . $prenom  . "','" . $apostal . "','" . $cpostal . "','" . $ville . "','" . $phone . "','" . $date . "')";
+                VALUES ('" . $mail . "', '" . $msg . "','" . $sujet . "','" . $nom . "','" . $USER . "','" . $prenom  . "','" . $apostal . "','" . $cpostal . "','" . $ville . "','" . $phone . "'',NOW())";
             $query = $pdo->prepare($sql);
             $query->bindValue('ID_USER', $USER, PDO::PARAM_STR);
             $query->bindValue('USEMAIL', $mail, PDO::PARAM_STR);
@@ -51,7 +51,6 @@ if (isset($_POST['rdv'])) {
             $query->bindValue('USECPOSTAL', $cpostal, PDO::PARAM_STR);
             $query->bindValue('USEVILLE', $ville, PDO::PARAM_STR);
             $query->bindValue('USEPHONE', $phone, PDO::PARAM_STR);
-            $query->bindValue('USEDATE', $date, PDO::PARAM_STR);
             $query->execute();
             $message = "Contact pris";
             $sujet = "Validation de votre message";
