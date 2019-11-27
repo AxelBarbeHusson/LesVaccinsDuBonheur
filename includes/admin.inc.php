@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                     <div class="div-square">
-                        <a href="../admin/editUser.php" >
+                        <a href="../admin/manageUsers.php" >
                             <i class="fa fa-key fa-5x"></i>
                             <h4>Admin </h4>
                         </a>
