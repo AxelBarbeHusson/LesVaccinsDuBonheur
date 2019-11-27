@@ -75,3 +75,5 @@ include('includes/header.php'); ?>
 <?php } ?>
 
 <?php include('footer.inc.php');
+
+/* fait le 25/11/2019 */
