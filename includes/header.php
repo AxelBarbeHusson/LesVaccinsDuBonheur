@@ -32,9 +32,9 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
     <nav>
         <ul class="nav navbar">
             <li><a href="index.php?page=acceuil">Home</a></li>
+            <li><a href="index.php?page=etatvaccins" title="">Mes vaccins</a></li>
+            <li><a href="index.php?page=vaccinspourvoyage" title="">Mes voyages</a></li>
             <li><a href="index.php?page=rendezVous" title="">Rendez-vous</a></li>
-            <li><a href="index.php?page=etatvaccins" title="">Etat Vaccins</a></li>
-            <li><a href="index.php?page=vaccinspourvoyage" title="">Vaccins pour voyages</a></li>
             <li><a target="_blank"
                    href="https://solidarites-sante.gouv.fr/IMG/pdf/calendrier_vaccinal_maj_17avril2019.pdf">Liens
                     vaccins</a></li>
@@ -53,7 +53,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
 
                 }else{
                 echo '<li ><a href = "index.php?page=login" > Login</a ></li >';
-                echo '<li ><a href = "index.php?page=inscriptions" > Inscriptions</a ></li >';
+                echo '<li ><a href = "index.php?page=inscriptions" > Inscription</a ></li >';
             }
 
              ?>

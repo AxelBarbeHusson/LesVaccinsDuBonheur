@@ -100,7 +100,8 @@ img#imagemed {
 
 .form-wrap {
   max-width: 300px;
-  padding: 10px;
+  padding-top:10px;
+    padding-left:50px;
   background-color: white;
 }
 
@@ -348,4 +349,4 @@ footer .wrap {
 }
 
 
-
+//////////////////////////
