@@ -17,59 +17,18 @@
 
 
 <div id="wrapper">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="adjust-nav">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="../assetsAdmin/img/logo.png" />
 
-                </a>
-
-            </div>
-
-
-        </div>
-    </div>
     <!-- /. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
 
 
-
-                <li class="active-link">
-                    <a href="admin.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
-                </li>
-
-
                 <li>
-                    <a href="../admin/ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
+                    <a href="index.php?page=addVaccins" ><i class="fa fa-qrcode "></i>Add Vaccins</a>
                 </li>
                 <li>
-                    <a href="../admin/blank.html"><i class="fa fa-edit "></i>Blank Page  <span class="badge">Included</span></a>
-                </li>
-
-
-                <li>
-                    <a href="#"><i class="fa fa-qrcode "></i>My Link One</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-bar-chart-o"></i>My Link Two</a>
-                </li>
-
-                <li>
-                    <a href="#"><i class="fa fa-edit "></i>My Link Three </a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-table "></i>My Link Four</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-edit "></i>My Link Five </a>
+                    <a href="index.php?page=editVaccins"><i class="fa fa-bar-chart-o"></i>Edit Vaccins</a>
                 </li>
 
             </ul>
@@ -117,11 +76,12 @@
                 </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                 <div class="div-square">
-                    <a href="../admin/blank.html" >
+                    <a href="index.php?page=inscriptions" >
                         <i class="fa fa-user fa-5x"></i>
                         <h4>Register User</h4>
                     </a>
                 </div>
+
 
 
             </div>
