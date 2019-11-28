@@ -2,6 +2,7 @@
 
 $errors = array();
 $success = false;
+
 if (!empty($_SESSION['login']['role']=== 'Admin')){
 if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];

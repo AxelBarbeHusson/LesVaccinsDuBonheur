@@ -32,6 +32,9 @@
                     <a href="index.php?page=editVaccins"><i class="fa fa-bar-chart-o"></i>Edit Vaccins</a>
                 </li>
                 <li>
+                    <a href="index.php?page=editUser"><i class="fa fa-bar-chart-o"></i>Edit Users</a>
+                </li>
+                <li>
                     <a href="index.php?page=rendezvousAdmin"><i class="fa fa-bar-chart-o"></i>Rdv Admin</a>
                 </li>
             </ul>
