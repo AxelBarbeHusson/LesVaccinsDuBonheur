@@ -1,5 +1,5 @@
 <?php
-include('includes/admin.inc.php');
+
 $title = 'Les rendez-vous';
 $sql   = "SELECT * FROM t_test";
 $query = $pdo->prepare($sql);
