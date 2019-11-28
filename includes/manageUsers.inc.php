@@ -12,7 +12,7 @@ $title = 'show users';
     $query->execute();
     $users = $query->fetchAll();
 
-//debug($users); ?>
+debug($users); ?>
 
 <h1>Show users</h1>
 <?php foreach ($users as $user) {
@@ -21,7 +21,7 @@ $title = 'show users';
 //debug($users);
 
     echo '<br><a href=#><span>Edit</span></a>';
-    echo '<br><a href="index.php?page=backDeleteUser"><span>Delete</span></a>';
+    echo '<br><a href="index.php?page=backDeleteUser?id=' . $user->Id_Users . '"><span>Delete</span></a>';
 
     echo '</div>';
 }
