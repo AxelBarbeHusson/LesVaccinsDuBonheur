@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-12 ">
                     <div class="alert alert-info">
-                        <strong>Welcome Jhon Doe ! </strong> You Have No pending Task For Today.
+                        <strong>Welcome Admin ! </strong>
                     </div>
 
                 </div>
@@ -90,28 +90,12 @@
             </div>
             </div>
             <!-- /. ROW  -->
-            <div class="row">
-                <div class="col-lg-12 ">
-                    <br/>
-                    <div class="alert alert-danger">
-                        <strong>Want More Icons Free ? </strong> Checkout fontawesome website and use any icon <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Click Here</a>.
-                    </div>
-
-                </div>
-            </div>
+            <
         <!-- /. PAGE INNER  -->
     </div>
     <!-- /. PAGE WRAPPER  -->
 </div>
-<div class="footer">
 
-
-    <div class="row">
-        <div class="col-lg-12" >
-            &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank"></a>
-        </div>
-    </div>
-</div>
 
 
 <!-- /. WRAPPER  -->
