@@ -83,6 +83,7 @@ if (!empty($_SESSION)){
             <input type="hidden" name="test"/>
         </form>
     <?php }else{
+
     echo "Erreur 403, vous n'avez pas accès a cette fonctionnalité";
     }?>
 
