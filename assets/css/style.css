@@ -416,3 +416,37 @@ footer .wrap {
     color: lightseagreen;
 }
 
+/************************************/
+.wrap .cgu {
+    max-width: 1200px;
+    width:100%;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+
+}
+
+.cgu h1 {
+    font-weight: bold;
+    font-size: 1.7em;
+    color: darkslateblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cgu h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: lightseagreen;
+
+}
+.cgu h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
