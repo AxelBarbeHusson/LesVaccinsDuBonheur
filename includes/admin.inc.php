@@ -32,10 +32,7 @@
 
             </div>
 
-            <span class="logout-spn" >
-                  <a href="#" style="color:#fff;">LOGOUT</a>
 
-                </span>
         </div>
     </div>
     <!-- /. NAV TOP  -->
@@ -100,7 +97,7 @@
             <!-- /. ROW  -->
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                     <div class="div-square">
-                        <a href="../admin/blank.html" >
+                        <a href="index.php?page=manageUsers" >
                             <i class="fa fa-users fa-5x"></i>
                             <h4>See Users</h4>
                         </a>
@@ -110,7 +107,7 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                     <div class="div-square">
-                        <a href="../admin/manageUsers.php" >
+                        <a href="index.php?page=backDeleteUser" >
                             <i class="fa fa-key fa-5x"></i>
                             <h4>Admin </h4>
                         </a>

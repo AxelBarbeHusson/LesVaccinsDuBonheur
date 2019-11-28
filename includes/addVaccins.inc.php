@@ -1,6 +1,5 @@
 <?php
-include('includes/pdo.php');
-include('index.php');
+
 $title = 'Add Vaccins';
 $errors = array();
 $success = false;
@@ -8,7 +7,7 @@ $success = false;
 // formulaire soumis ???
 if(!empty($_POST['submitted'])) {
     // Faille XSS
-    debug($_POST);
+    //debug($_POST);
     $nom        = clean($_POST['nom']);
     $created_at = clean($_POST['created_at']);
     $rappel1    = clean($_POST['rappel1']);
@@ -28,7 +27,7 @@ if(!empty($_POST['submitted'])) {
     }
 }
 
-include('includes/header.php'); ?>
+; ?>
     <h1>Ajouter un Vaccin pour le bonheur</h1>
 <?php  if($success) { ?>
     <p>Bravo tu vas pouvoir être vacciner ma biche</p>
@@ -38,15 +37,15 @@ include('includes/header.php'); ?>
         <input type="text" id="nom" name="nom" value="<?php if(!empty( $_POST['nom'])) {echo $_POST['nom'];} ?>">
         <span class="error"><?php if(!empty($errors['nom'])) { echo $errors['nom']; } ?></span>
 
-        <label for="code">Date de création*</label>
-        <input type="text" id="created_at" name="code" value="<?php if(!empty( $_POST['created_at'])) {echo $_POST['created_at'];} ?>">
+        <label for="created_at">Date de création*</label>
+        <input type="date" id="created_at" name="created_at" value="<?php if(!empty( $_POST['created_at'])) {echo $_POST['created_at'];} ?>">
         <span class="error"><?php if(!empty($errors['created_at'])) { echo $errors['created_at']; } ?></span>
 
-        <label for="district">Date du premier rappel*</label>
+        <label for="rappel1">Date du premier rappel*</label>
         <input type="text" id="rappel1" name="rappel1" value="<?php if(!empty( $_POST['rappel1'])) {echo $_POST['rappel1'];} ?>">
         <span class="error"><?php if(!empty($errors['rappel1'])) { echo $errors['rappel1']; } ?></span>
 
-        <label for="population">Date du second rappel*</label>
+        <label for="rappel2">Date du second rappel*</label>
         <input type="text" id="rappel2" name="rappel2" value="<?php if(!empty( $_POST['rappel2'])) {echo $_POST['rappel2'];} ?>">
         <span class="error"><?php if(!empty($errors['rappel2'])) { echo $errors['rappel2']; } ?></span>
 
@@ -54,6 +53,6 @@ include('includes/header.php'); ?>
 
     </form>
 <?php } ?>
-<?php include('includes/footer.inc.php');
 
-/* fait le 25/11/2019 */
+
+
