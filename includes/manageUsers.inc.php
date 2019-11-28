@@ -12,7 +12,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
     $query->execute();
     $users = $query->fetchAll();
 
-debug($users); ?>
+//debug($users); ?>
 
 <h1>Show users</h1>
 <?php foreach ($users as $user) {

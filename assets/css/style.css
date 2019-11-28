@@ -59,6 +59,7 @@ header .icones img {
   height: 50px;
     float: left;
 
+
 }
 header .icones p {
     float: left;
@@ -89,6 +90,7 @@ header .icones {
 img#imagemed {
   width: 1520px;
   height: 900px;
+
 }
 
 
@@ -240,7 +242,6 @@ footer .wrap {
 }
 .column ul {
   list-style: none;
-  padding-left: 0;
 }
 /* social-icons */
 .social-icons li {
@@ -349,6 +350,13 @@ footer .wrap {
     background: #f1f1f1;
     margin-bottom: 10px;
 }
+.form-wrap input[type=email] {
+    width: 400px;
+    padding-top: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
 .form-wrap textarea {
     width: 400px;
     padding-top: 15px;
@@ -368,12 +376,15 @@ footer .wrap {
 }
 
 .form-wrap button:hover {
-    background-color: lime;
+    background-color: mediumpurple;
 }
 
 .form-wrap input[type=submit] {
-    width: 180px;
-    padding-top: 15px;
+    width: 190px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
     border: #1c7430, 1px;
     background: lightseagreen;
     font-weight: bold;
@@ -381,10 +392,11 @@ footer .wrap {
     color: white;
 }
 .form-wrap input[type=reset] {
-    width: 180px;
+    width: 190px;
     padding-top: 10px;
-    margin-right: 8px;
-    margin-left: 13px;
+    padding-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
     margin-top: 15px;
     margin-bottom: 45px;
     border: #1c7430, 1px;
