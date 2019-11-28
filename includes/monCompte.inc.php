@@ -53,7 +53,7 @@ $success = false;
     $users = $query->fetch();
 
     ?>
-    <form method="post" action="">
+    <form class="form-wrap" method="post" action="">
         <fieldset>
             <div>
                 <label for="nom">Votre nom :</label>

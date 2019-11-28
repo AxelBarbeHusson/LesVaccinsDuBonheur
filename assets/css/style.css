@@ -106,12 +106,15 @@ img#imagemed {
   width: 50%;
   color: #000;
   text-align: center;
+    margin-bottom: 100px;
+
 }
 
 #bienvenue .section2 img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 15px;
+    margin-top:30px;
 }
 
 #bienvenue h2 {
@@ -136,14 +139,17 @@ img#imagemed {
 }
 #bienvenue h3 {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 #bienvenue .section2 p {
 
-    padding-top: 30px;
-    padding-bottom: 80px;
-    padding-left: 120px;
-    padding-right: 120px;
+    margin-right: 130px;
+    margin-left: 130px;
+    text-align: justify;
+    text-indent: 35px;
+    line-height: 18px;
 }
 
 
