@@ -14,7 +14,7 @@ include('header.php'); ?>
 
     <div class="vaccin">
         <h2><?php echo $vaccin['nom']; ?></h2>
-        <a href="editVaccins.php?id=<?php echo $vaccin['id']; ?>">Editer</a>
+        <a href="editVaccins.inc.php?id=<?php echo $vaccin['id']; ?>">Editer</a>
     </div>
 
 <?php } ?>
