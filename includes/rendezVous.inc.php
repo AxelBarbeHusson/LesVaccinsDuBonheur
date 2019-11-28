@@ -1,4 +1,4 @@
-<h1>Rendez-Vous</h1>
+
 
 <?php
 $success = false;

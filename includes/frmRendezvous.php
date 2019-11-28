@@ -12,6 +12,7 @@ if (!isset($msg)) $msg = "";
 ?>
 
 <form method="post" class="form-wrap" action="index.php?page=rendezVous">
+    <h2>Rendez-vous</h2>
     <fieldset>
         <div>
             <label for="nom">Nom :</label>
@@ -23,11 +24,11 @@ if (!isset($msg)) $msg = "";
         </div>
         <div>
             <label for="mail">Adresse électronique :</label>
-            <input type="email" id="mail" name="mail" value="<?= $mail ?>"/>
+            <input type="text" id="mail" name="mail" value="<?= $mail ?>"/>
         </div>
         <div>
             <label for="apostal">Adresse postale :</label>
-            <textarea id="apostal" name="apostal" value="<?= $apostal ?>">Votre adresse postal</textarea>
+            <textarea id="apostal" name="apostal" value="<?= $apostal ?>">Votre adresse postale</textarea>
         </div>
         <div>
             <label for="cpostal">Code postal :</label>
@@ -39,7 +40,7 @@ if (!isset($msg)) $msg = "";
         </div>
         <div>
             <label for="phone">Téléphone :</label>
-            <input type="tel" name="phone" id="phone" value="<?= $phone ?>"/>
+            <input type="text" name="phone" id="phone" value="<?= $phone ?>"/>
         </div>
     </fieldset>
 

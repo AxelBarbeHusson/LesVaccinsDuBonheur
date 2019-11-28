@@ -8,6 +8,7 @@ if (!isset($role)) $role = "";
 
 ?>
 <form method="post" class="form-wrap" action="index.php?page=inscriptions">
+    <h2>Inscription</h2>
     <div>
         <label for="nom">Nom&nbsp;: </label>
         <input type="text" id="nom" name="nom" value="<?= $nom ?>"/>

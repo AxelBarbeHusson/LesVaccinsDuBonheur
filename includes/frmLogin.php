@@ -4,7 +4,7 @@ if (!isset($mdp)) $mdp = "";
 ?>
 
     <form method="post" action="index.php?page=login" class="form-wrap">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <label for="mail"><b>Email :</b></label>
         <input type="text" placeholder="Entrez votre Email" id="mail" name="mail" required value="<?= $mail ?>">
         <label for="mdp"><b>Mot de passe :</b></label>

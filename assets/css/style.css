@@ -3,6 +3,8 @@
 
 
 
+
+
 .page-header .wrap {
     max-width: 1350px;
     width:100%;
@@ -49,7 +51,7 @@ header nav ul li a {
   }
 
   header nav ul li a:hover {
-    background-color: lime;
+    background-color: lightseagreen;
   }
 
 header .icones img {
@@ -89,57 +91,8 @@ img#imagemed {
   height: 900px;
 }
 
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
 
-.form-wrap {
-  max-width: 300px;
-  padding-top:10px;
-    padding-left:50px;
-  background-color: white;
-}
 
-.form-wrap input[type=text], .form-wrap input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-wrap input[type=text]:focus, .form-wrap input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-.form-wrap .btn {
-  background-color: #309488;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-.form-wrap .cancel {
-  background-color: red;
-}
-/**/
-/* hover effect sur les boutons */
-.form-wrap .btn:hover, .log-button:hover {
-  opacity: 1;
-}
-.form-wrap label {
-  color: #309488;
-}
 
 #bienvenue{
   color: #000;
@@ -350,3 +303,110 @@ footer .wrap {
 
 
 //////////////////////////
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-wrap {
+    max-width: 400px;
+    padding-top:10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form-wrap input[type=text] {
+    width: 400px;
+    padding-top: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.form-wrap input[type=password] {
+    width: 400px;
+    padding-top: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+.form-wrap input[type=date] {
+    width: 400px;
+    padding-top: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+.form-wrap textarea {
+    width: 400px;
+    padding-top: 15px;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.form-wrap button {
+    width: 400px;
+    padding: 5px;
+    border: #1c7430, 1px;
+    background: lightblue;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+}
+
+.form-wrap button:hover {
+    background-color: lime;
+}
+
+.form-wrap input[type=submit] {
+    width: 180px;
+    padding-top: 15px;
+    border: #1c7430, 1px;
+    background: lightseagreen;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+.form-wrap input[type=reset] {
+    width: 180px;
+    padding-top: 15px;
+    margin-right: 8px;
+    margin-left: 13px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    border: #1c7430, 1px;
+    background: lightseagreen;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+
+}
+
+.form-wrap input[type=reset]:hover {
+     background-color: gainsboro;
+ }
+
+.form-wrap input[type=submit]:hover {
+    background-color: gainsboro;
+}
+
+.form-wrap h2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: darkslateblue;
+}
+
+.form-wrap label {
+    color: lightseagreen;
+}
+

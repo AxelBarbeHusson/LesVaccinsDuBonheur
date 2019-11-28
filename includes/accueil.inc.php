@@ -27,7 +27,7 @@
     <section id="equipe">
         <h2>Notre équipe</h2>
         <div class="ligne"></div>
-        <p>Blalalalala blalalala blalala balalalala bhaha ahahahahaha ahahahahaha ahahahah<br>jejejejejejejej ezheheheheh ejejejejejej</p>
+
 
         <div class="section1">
             <!--      <img src="assets/img/corgi.jpg" alt="Un membre de l'équipe.">-->
