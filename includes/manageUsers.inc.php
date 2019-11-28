@@ -21,7 +21,7 @@ debug($users); ?>
 //debug($users);
 
     echo '<br><a href=#><span>Edit</span></a>';
-    echo '<br><a href="index.php?page=backDeleteUser?id=' . $user->Id_Users . '"><span>Delete</span></a>';
+    echo '<br><a href="./includes/backDeleteUser.inc.php?id=' . $user->Id_Users . '"><span>Delete</span></a>';
 
     echo '</div>';
 }
