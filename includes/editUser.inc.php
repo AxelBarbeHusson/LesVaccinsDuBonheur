@@ -2,16 +2,16 @@
 
 $errors = array();
 $success = false;
-if (!empty($_SESSION['login']['role']=== 'Admin')){
-    if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
-        $id = $_GET['id'];
+if (!empty($_SESSION['login']['role'] === 'Admin')) {
+
+
+
         // request
-        $sql = "SELECT * FROM t_users
-          WHERE id = $id";
+        $sql = "SELECT * FROM t_users";
         $query = $pdo->prepare($sql);
         $query->execute();
         $editUsers = $query->fetch();
-        //debug($editUsers);
+
         if (!empty($editUsers)) {
 
             if (!empty($_POST['submitted'])) {
@@ -27,8 +27,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
                     $success = true;
                     // UPDATE SQL
                     $sql = "UPDATE t_users
-          SET USENOM = :nom, USEPRENOM = :prenom, USEMAIL = :mail,
-          WHERE ID = $id";
+          SET USENOM = :nom, USEPRENOM = :prenom, USEMAIL = :mail";
                     $query = $pdo->prepare($sql);
                     $query->bindValue(':nom', $nom, PDO::PARAM_STR);
                     $query->bindValue(':prenom', $prenom, PDO::PARAM_STR);
@@ -40,49 +39,50 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
 
         } else {
             die('404');
-        }
+
     }
 
     ?>
 
     <?php if ($success) { ?>
         <p>Bravo ma biche</p>
-    <?php } else { ?>
-        <form action="" method="post">
-            <label for="nom">Nom à modifier*</label>
-            <input type="text" id="nom" name="nom" value="<?php if (!empty($_POST['nom'])) {
-                echo $_POST['nom'];
-            } else {
-                echo $editUsers['USENOM'];
-            } ?>">
-            <span class="error"><?php if (!empty($errors['nom'])) {
-                    echo $errors['nom'];
-                } ?></span>
-
-            <label for="prenom">Prenom à modifier*</label>
-            <input type="text" id="prenom" name="prenom" value="<?php if (!empty($_GET['prenom'])) {
-                echo $_GET['prenom'];
-            } else {
-                echo $editUsers['USEPRENOM'];
-            } ?>">
-            <span class="error"><?php if (!empty($errors['prenom'])) {
-                    echo $errors['prenom'];
-                } ?></span>
-
-            <label for="mail">Mail à modifier*</label>
-            <input type="text" id="mail" name="mail" value="<?php if (!empty($_GET['mail'])) {
-                echo $_GET['mail'];
-            } else {
-                echo $editUsers['USEMAIL'];
-            } ?>">
-            <span class="error"><?php if (!empty($errors['mail'])) {
-                    echo $errors['mail'];
-                } ?></span>
+    <?php } else {
 
 
+        ?>
+        <form class="form-wrap" action="" method="post">
+            <fieldset>
+                <label for="nom">Nom à modifier*</label>
+                <input type="text" id="nom" name="nom" value="<?php if (!empty($_POST['nom'])) {
+                    echo $_POST['nom'];
+                }
+                ?>">
+                <span class="error"><?php if (!empty($errors['nom'])) {
+                        echo $errors['nom'];
+                    } ?></span>
+
+                <label for="prenom">Prenom à modifier*</label>
+                <input type="text" id="prenom" name="prenom" value="<?php if (!empty($_GET['prenom'])) {
+                    echo $_GET['prenom'];
+                }
+                ?>">
+                <span class="error"><?php if (!empty($errors['prenom'])) {
+                        echo $errors['prenom'];
+                    } ?></span>
+
+                <label for="mail">Mail à modifier*</label>
+                <input type="text" id="mail" name="mail" value="<?php if (!empty($_GET['mail'])) {
+                    echo $_GET['mail'];
+                } ?>">
+                <span class="error"><?php if (!empty($errors['mail'])) {
+                        echo $errors['mail'];
+                    } ?></span>
+
+            </fieldset>
             <input type="submit" name="submitted" value="Envoyer">
 
         </form>
-    <?php } }else{
+    <?php }
+} else {
     echo "Erreur 403, vous n'avez pas accès a cette fonctionnalité";
-}?>
+} ?>

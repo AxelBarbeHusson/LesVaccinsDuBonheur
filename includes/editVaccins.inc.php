@@ -51,13 +51,12 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
 <?php if ($success) { ?>
     <p>Bravo ma biche</p>
 <?php } else { ?>
-    <form action="" method="post">
+    <form action="" class="form-wrap" method="post">
+        <fieldset>
         <label for="nom">Nom du Vaccin*</label>
         <input type="text" id="nom" name="nom" value="<?php if (!empty($_POST['nom'])) {
             echo $_POST['nom'];
-        } else {
-            echo $vaccins['nom'];
-        } ?>">
+        }  ?>">
         <span class="error"><?php if (!empty($errors['nom'])) {
                 echo $errors['nom'];
             } ?></span>
@@ -65,9 +64,7 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
         <label for="created_at">Modifier le*</label>
         <input type="text" id="created_at" name="crated_at" value="<?php if (!empty($_GET['created_at'])) {
             echo $_GET['created_at'];
-        } else {
-            echo $vaccins['Created_at'];
-        } ?>">
+        }  ?>">
         <span class="error"><?php if (!empty($errors['created_at'])) {
                 echo $errors['created_at'];
             } ?></span>
@@ -75,9 +72,7 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
         <label for="rappel1">Premier rappel le*</label>
         <input type="text" id="rappel1" name="rappel1" value="<?php if (!empty($_GET['rappel1'])) {
             echo $_GET['rappel1'];
-        } else {
-            echo $vaccins['rappel1'];
-        } ?>">
+        }  ?>">
         <span class="error"><?php if (!empty($errors['rappel1'])) {
                 echo $errors['rappel1'];
             } ?></span>
@@ -85,13 +80,11 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
         <label for="population">Second rappel le*</label>
         <input type="text" id="rappel2" name="rappel2" value="<?php if (!empty($_GET['rappel2'])) {
             echo $_GET['rappel2'];
-        } else {
-            echo $vaccins['rappel2'];
-        } ?>">
+        }  ?>">
         <span class="error"><?php if (!empty($errors['rappel2'])) {
                 echo $errors['rappel2'];
             } ?></span>
-
+        </fieldset>
         <input type="submit" name="submitted" value="Envoyer">
 
     </form>
