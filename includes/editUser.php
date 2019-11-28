@@ -53,7 +53,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
             <input type="text" id="nom" name="nom" value="<?php if (!empty($_POST['nom'])) {
                 echo $_POST['nom'];
             } else {
-                echo $editUsers['nom'];
+                echo $editUsers['USENOM'];
             } ?>">
             <span class="error"><?php if (!empty($errors['nom'])) {
                     echo $errors['nom'];
@@ -63,7 +63,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
             <input type="text" id="prenom" name="prenom" value="<?php if (!empty($_GET['prenom'])) {
                 echo $_GET['prenom'];
             } else {
-                echo $editUsers['prenom'];
+                echo $editUsers['USEPRENOM'];
             } ?>">
             <span class="error"><?php if (!empty($errors['prenom'])) {
                     echo $errors['prenom'];
@@ -73,7 +73,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
             <input type="text" id="mail" name="mail" value="<?php if (!empty($_GET['mail'])) {
                 echo $_GET['mail'];
             } else {
-                echo $editUsers['mail'];
+                echo $editUsers['USEMAIL'];
             } ?>">
             <span class="error"><?php if (!empty($errors['mail'])) {
                     echo $errors['mail'];
