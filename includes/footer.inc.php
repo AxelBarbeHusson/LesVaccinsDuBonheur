@@ -27,17 +27,17 @@ $date = date('Y');
             <div class="column">
                 <h3 class="column-title">Latest Tweets</h3>
                 <ul class="tweets">
-                    <li><a href="#">@Corgi_</a> Ici pourrait </li>
-                    <li><a href="#">@Corgi_</a> être un endroit</li>
-                    <li><a href="#">@Corgi_</a> où l'on pourrait référencer les feedback</li>
+                    <li><a href="#">@Corgi_</a> Site très pratique </li>
+                    <li><a href="#">@Caniche_</a> Je recommande pour toute la famille</li>
+                    <li><a href="#">@Cocker_</a> Super pour préparer son voyage</li>
                 </ul>
             </div>
 
             <div class="column">
                 <h3 class="column-title">Derniers posts</h3>
                 <ul class="post-list">
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">Test</a></li>
+                    <li><a href="#">Les vaccins c'est trop bien</a></li>
+                    <li><a href="#">La santé ça fait plaisir</a></li>
                 </ul>
             </div>
 
