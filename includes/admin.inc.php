@@ -1,3 +1,4 @@
+<?php if (!empty($_SESSION['login']['role']=== 'Admin')){?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -30,7 +31,9 @@
                 <li>
                     <a href="index.php?page=editVaccins"><i class="fa fa-bar-chart-o"></i>Edit Vaccins</a>
                 </li>
-
+                <li>
+                    <a href="index.php?page=rendezvousAdmin"><i class="fa fa-bar-chart-o"></i>Rdv Admin</a>
+                </li>
             </ul>
         </div>
 
@@ -48,7 +51,7 @@
             <div class="row">
                 <div class="col-lg-12 ">
                     <div class="alert alert-info">
-                        <strong>Welcome Jhon Doe ! </strong> You Have No pending Task For Today.
+                        <strong>Welcome Admin ! </strong>
                     </div>
 
                 </div>
@@ -90,28 +93,12 @@
             </div>
             </div>
             <!-- /. ROW  -->
-            <div class="row">
-                <div class="col-lg-12 ">
-                    <br/>
-                    <div class="alert alert-danger">
-                        <strong>Want More Icons Free ? </strong> Checkout fontawesome website and use any icon <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Click Here</a>.
-                    </div>
-
-                </div>
-            </div>
+            <
         <!-- /. PAGE INNER  -->
     </div>
     <!-- /. PAGE WRAPPER  -->
 </div>
-<div class="footer">
 
-
-    <div class="row">
-        <div class="col-lg-12" >
-            &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank"></a>
-        </div>
-    </div>
-</div>
 
 
 <!-- /. WRAPPER  -->
@@ -126,3 +113,6 @@
 
 </body>
 </html>
+<?php }else{
+    echo "Erreur 403, vous n'avez pas accès a cette fonctionnalité";
+}?>

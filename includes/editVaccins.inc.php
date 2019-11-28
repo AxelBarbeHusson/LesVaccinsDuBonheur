@@ -2,6 +2,7 @@
 
 $errors = array();
 $success = false;
+if (!empty($_SESSION['login']['role']=== 'Admin')){
 if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
     // request
@@ -93,5 +94,7 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
         <input type="submit" name="submitted" value="Envoyer">
 
     </form>
-<?php } ?>
+<?php } }else{
+    echo "Erreur 403, vous n'avez pas accès a cette fonctionnalité";
+}?>
 
