@@ -1,3 +1,4 @@
+<?php if (!empty($_SESSION['login']['role']=== 'Admin')){?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -30,7 +31,9 @@
                 <li>
                     <a href="index.php?page=editVaccins"><i class="fa fa-bar-chart-o"></i>Edit Vaccins</a>
                 </li>
-
+                <li>
+                    <a href="index.php?page=rendezvousAdmin"><i class="fa fa-bar-chart-o"></i>Rdv Admin</a>
+                </li>
             </ul>
         </div>
 
@@ -110,3 +113,6 @@
 
 </body>
 </html>
+<?php }else{
+    echo "Erreur 403, vous n'avez pas accès a cette fonctionnalité";
+}?>

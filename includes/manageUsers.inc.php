@@ -2,7 +2,7 @@
 
 
 $title = 'show users';
-
+if (!empty($_SESSION['login']['role']=== 'Admin')){
 
     $sql = "SELECT * FROM t_users
         WHERE 1";
@@ -26,6 +26,7 @@ debug($users); ?>
     echo '</div>';
 }
 
-
+}else{
+    echo "Erreur 403, vous n'avez pas accès a cette fonctionnalité";
+}
 ?>
-<a href="index.php?page=addVaccins">Ajouter un nouveau vaccin</a>

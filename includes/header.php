@@ -41,7 +41,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
             <?php
             if (!empty($_SESSION['login'])) {
 
-                if (ifLogged()) {
+                if (!empty($_SESSION['login']['role']==="Admin")) {
                     echo '<li><a href="index.php?page=admin" >Pannel Admin</a></li>';
 
                     echo '<li class="nav-item"><a href="index.php?page=logout" class="nav-link js-scroll-trigger">Logout</a></li>';
