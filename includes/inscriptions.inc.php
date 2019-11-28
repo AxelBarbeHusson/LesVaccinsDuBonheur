@@ -42,7 +42,6 @@ if (isset($_POST['maurice'])) {
             $query->bindValue('USEPRENOM', $prenom, PDO::PARAM_STR);
             $query->bindValue('USEMAIL', $mail, PDO::PARAM_STR);
             $query->bindValue('USEPASSWORD', $mdp, PDO::PARAM_STR);
-            $query->bindValue('USEPASSWORD', $mdp, PDO::PARAM_STR);
             $query->bindValue('birthdate', $date, PDO::PARAM_STR);
             $query->execute();
             $msg = "Inscription Ok";
