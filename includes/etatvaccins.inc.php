@@ -16,10 +16,38 @@ if (!empty($_SESSION)){
     echo 'Vos vaccins :';
     foreach($userVaccins as $userVaccin) {
         echo $userVaccin->nom;
-
-
     }
-    echo '</div>';
+
+    $sql = "SELECT * FROM vaccins
+            WHERE 1";
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    $vaccins = $query->fetchAll();
+    //debug($vaccins);
+    $idvaccin = 0;
+    if(!empty($_POST['submitted'])) {
+        $sql = "INSERT INTO users_vaccins (Id_Users, id) 
+        VALUES ($id, $idvaccin)";
+        $query = $pdo->prepare($sql);
+        $query->bindValue(':Id_Users', $id, PDO::PARAM_INT);
+        $query->bindValue(':Id_Users', $id, PDO::PARAM_INT);
+        $query->execute();
+        die('insert done');
+    }
+    ?>
+    <form class="form-wrap">
+        <label>Ajouter un vaccin à votre carnet :</label>
+        <select>
+            <?php foreach($vaccins as $vaccin) { ?>
+                <option><?php $idvaccin=$vaccin->id; echo $vaccin->nom;?></option>
+            <?php } ?>
+        </select>
+        <input type="submit" name="" value="Envoyer <?php if(isset($_POST['submitted'])) { die('ok'); } ?>">
+    </form>
+    <input type="hidden" name="submitted">
+
+    <?='</div>'; ?>
+<?php
 }else{
     $sql = "SELECT * FROM vaccins
             WHERE 1";
