@@ -5,7 +5,6 @@ if (isset($_POST['maurice'])) {
     $prenom = isset($_POST['prenom']) ? clean($_POST['prenom']) : "";
     $mail = isset($_POST['mail']) ? clean($_POST['mail']) : "";
     $date = isset($_POST['date']) ? clean($_POST['date']) : "";
-
     $mdp = isset($_POST['mdp']) ? clean($_POST['mdp']) : "";
     $role = isset($_POST['role']) ? clean($_POST['role']) : "";
 
