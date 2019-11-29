@@ -1,7 +1,7 @@
 <h1 id="nav">Etat Vaccins</h1>
 <?php
 if (!empty($_SESSION)){
-    debug($_SESSION);
+    //debug($_SESSION);
     $id = $_SESSION['login']['id'];
     $sql = "SELECT USENOM, nom
         FROM users_vaccins
@@ -35,10 +35,10 @@ if (!empty($_SESSION)){
         die('insert done');
     }
     ?>
-    <section>
-        <img id="imagemedo" src="assets/img/medimg.jpg" alt="">
 
-    </section>
+
+
+
     <form class="form-wrap">
         <label>Ajouter un vaccin à votre carnet :</label>
         <select>
