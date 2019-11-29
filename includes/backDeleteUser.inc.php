@@ -1,5 +1,5 @@
 <?php
-include('./pdo.php');
+include "../includes/pdo.php";
 
 
 if ($_GET['id'] && is_numeric($_GET['id'])){
@@ -10,5 +10,6 @@ if ($_GET['id'] && is_numeric($_GET['id'])){
     $query -> execute();
 
     echo "Vous avez bien supprimé votre utilsateurs";
+    header("Location: http://localhost/LesVaccinsDuBonheur/index.php?page=manageUsers");
     //header("Location: manageUsers.inc.php");
 }
