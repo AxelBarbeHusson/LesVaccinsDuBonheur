@@ -18,7 +18,7 @@ if (!isset($role)) $role = "";
         <input type="text" id="prenom" name="prenom" value="<?= $prenom ?>"/>
     </div>
     <div>
-        <label for="date">Date :</label>
+        <label for="date">Date de naissance :</label>
         <input type="date" id="date" name="date" value="<?= $date ?>"/>
     </div>
     <div>
@@ -34,8 +34,13 @@ if (!isset($role)) $role = "";
         <input type="hidden"  value="<?php $role = 'Users'?>">
     </div>
     <div>
-        <input type="reset" value="Effacer"/>
-        <input type="submit" value="Envoyer"/>
+
+        <input type="radio">
+        <a target="_blank" href="index.php?page=cgu">Accepté les CGU</a><span> & </span><a target="_blank" href="index.php?page=mentionsLegales">les Mentions légales</a>
+    </div>
+    <div>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Reset">
     </div>
     <input type="hidden" name="maurice"/>
 </form>
