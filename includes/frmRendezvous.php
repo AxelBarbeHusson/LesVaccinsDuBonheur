@@ -10,7 +10,10 @@ if (!isset($phone)) $phone = "";
 
 if (!isset($msg)) $msg = "";
 ?>
+<section>
+    <img id="imagemedo" src="assets/img/medimg.jpg" alt="">
 
+</section>
 <form method="post" class="form-wrap" action="index.php?page=rendezVous">
     <h2>Rendez-vous</h2>
     <fieldset>

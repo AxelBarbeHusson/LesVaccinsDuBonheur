@@ -35,6 +35,10 @@ if (!empty($_SESSION)){
         die('insert done');
     }
     ?>
+    <section>
+        <img id="imagemedo" src="assets/img/medimg.jpg" alt="">
+
+    </section>
     <form class="form-wrap">
         <label>Ajouter un vaccin à votre carnet :</label>
         <select>
