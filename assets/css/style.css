@@ -93,6 +93,12 @@ img#imagemed {
 
 }
 
+img#imagemedo {
+    width: 1520px;
+    height: 350px;
+
+}
+
 
 
 
@@ -462,3 +468,66 @@ footer .wrap {
 
 }
 
+@media screen and (max-width: 700px) {
+    .column {
+        display:block;
+        clear:both;
+        float: left;
+        width: 33%;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #equipe .section1 {
+        display: block;
+        clear: both;
+        float: left;
+        width: 25%;
+        color: #000;
+        text-align: center;
+
+    }
+}
+@media screen and (max-width: 700px) {
+    #bienvenue .section2 {
+        display: block;
+        clear: both;
+        float: left;
+        width: 50%;
+        color: #000;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    img#imagemed {
+        display: block;
+        clear: both;
+        width: 700px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 700px) {
+    img#imagemedo {
+        display: block;
+        clear: both;
+        width: 700px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 700px) {
+    header nav ul li a {
+        display: block;
+        clear: both;
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        background-color: darkslateblue;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        width: 14.285%;
+    }
+}
