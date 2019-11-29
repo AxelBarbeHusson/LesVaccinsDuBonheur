@@ -12,7 +12,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
 <header class="page-header">
     <div class="wrap">
         <div class="log">
-            <img id="logo" src="assets/img/logov2.png" alt="logo">
+            <a href="index.php?page=acceuil"><img id="logo" src="assets/img/logov2.png" alt="logo"></a>
             <h4 id="titre">Carnax<br><span>Les vaccins connectés</span></h4>
         </div>
         <div class="icones">
