@@ -56,6 +56,7 @@ $date = date('Y');
                     <li><a href="index.php?page=etatvaccins" title="">Etat Vaccins</a></li>
                     <li><a href="index.php?page=vaccinspourvoyage" title="">Vaccins pour voyages</a></li>
                     <li><a href="index.php?page=cgu">CGU</a></li>
+                    <li><a href="index.php?page=mentionsLegales">Mentions légales</a></li>
                     <a target="_blank" href="https://solidarites-sante.gouv.fr/IMG/pdf/calendrier_vaccinal_maj_17avril2019.pdf">Liens vaccins</a>
                 </ul>
 

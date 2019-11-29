@@ -28,7 +28,7 @@ if (isset($_POST['maurice'])) {
         echo $message;
         include "frmInscription.php";
     } else {
-        $sql = "SELECT COUNT(*) FROM t_users WHERE USEMAIL='" . $mail . "'";
+        $sql = "SELECT COUNT(*) FROM t_users";
         $nombreOccurences = $pdo->query($sql)->fetchColumn();
         if ($nombreOccurences == 0) {
             $mdp = password_hash($mdp, PASSWORD_DEFAULT);
@@ -45,13 +45,9 @@ if (isset($_POST['maurice'])) {
             $query->execute();
             $msg = "Inscription Ok";
             $sujet = "Validation de votre inscription";
-            if (mail($mail, $sujet, $msg)) {
-                echo "Inscription ok !";
-            } else {
-                echo "Probleme d'inscription";
-            }
+
         } else {
-            echo "Vous êtes déjà dans la BDD";
+            header("Location: http://localhost/LesVaccinsDuBonheur/index.php?page=login");
         }
     }
 } else {

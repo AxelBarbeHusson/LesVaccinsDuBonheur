@@ -1,4 +1,7 @@
+<section>
+    <img id="imagemed" src="assets/img/medimg.jpg" alt="">
 
+</section>
 <div class="wrap">
 
     <section id="bienvenue">

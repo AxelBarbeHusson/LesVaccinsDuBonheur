@@ -3,6 +3,8 @@ if (!isset($mail)) $mail = "";
 if (!isset($mdp)) $mdp = "";
 ?>
 
+
+
     <form method="post" action="index.php?page=login" class="form-wrap">
         <h2>Login</h2>
         <label for="mail"><b>Email :</b></label>

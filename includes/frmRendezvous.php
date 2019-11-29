@@ -11,6 +11,9 @@ if (!isset($phone)) $phone = "";
 if (!isset($msg)) $msg = "";
 ?>
 
+
+
+
 <form method="post" class="form-wrap" action="index.php?page=rendezVous">
     <h2>Rendez-vous</h2>
     <fieldset>

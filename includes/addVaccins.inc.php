@@ -28,12 +28,13 @@ if(!empty($_POST['submitted'])) {
 }
 
 ; ?>
-    <h1>Ajouter un Vaccin pour le bonheur</h1>
+
 <?php  if($success) { ?>
     <p>Bravo tu vas pouvoir être vacciner ma biche</p>
 <?php } else { ?>
     <form class="form-wrap" action="" method="post">
-        <label for="nom">Nom du Vaccin*</label>
+        <h1>Ajoutez un Vaccins</h1>
+        <br><label for="nom">Nom du Vaccin*</label>
         <input type="text" id="nom" name="nom" value="<?php if(!empty( $_POST['nom'])) {echo $_POST['nom'];} ?>">
         <span class="error"><?php if(!empty($errors['nom'])) { echo $errors['nom']; } ?></span>
 
