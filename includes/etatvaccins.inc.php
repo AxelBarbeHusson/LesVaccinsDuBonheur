@@ -1,4 +1,4 @@
-<h1 id="nav">Etat Vaccins</h1>
+<h1 id="gens">Etat Vaccins</h1>
 <?php
 if (!empty($_SESSION)){
     //debug($_SESSION);
@@ -14,8 +14,12 @@ if (!empty($_SESSION)){
     //debug($userVaccins);
     echo '<div class = vaccinsUsers>';
     echo 'Vos vaccins :';
+    echo '<br>';
+    echo '<br>';
     foreach($userVaccins as $userVaccin) {
-        echo $userVaccin->nom;
+        echo '- ' . $userVaccin->nom;
+        echo '<br>';
+        echo '<br>';
     }
 
     $sql = "SELECT * FROM vaccins
