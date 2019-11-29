@@ -12,7 +12,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
 
 //debug($users); ?>
 
-    <h1>Rendez-Vous</h1>
+    <h1 id="gens">Rendez-Vous</h1>
     <?php foreach ($users as $user) {
         echo '<div class="user">';
         echo '- ' . $user->USENOM . ' ' . $user->USEPRENOM. '';
@@ -26,7 +26,6 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
         echo '<br><p>'. $user->USESUJET .'</p>';
         echo '<br><p>'. $user->USEMESSAGE .'</p>';
         echo '<br><p>'. $user->USEDATE .'</p>';
-        echo '<br><a href="./includes/backDeleteUser.inc.php?id=' . $user->ID_USER . '"><span>Delete User</span></a>';
         echo '</div>';
     }
 
