@@ -1,7 +1,7 @@
 <h1 id="nav">Etat Vaccins</h1>
 <?php
 if (!empty($_SESSION)){
-    debug($_SESSION);
+    //debug($_SESSION);
     $id = $_SESSION['login']['id'];
     $sql = "SELECT USENOM, nom
         FROM users_vaccins
