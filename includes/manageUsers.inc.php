@@ -14,7 +14,7 @@ if (!empty($_SESSION['login']['role']=== 'Admin')){
 
 //debug($users); ?>
 
-<h1>Show users</h1>
+<h1 id="gens">Show users</h1>
 <?php foreach ($users as $user) {
     echo '<div class="user">';
     echo '- ' . $user->USENOM . ' ' . $user->USEPRENOM. '';

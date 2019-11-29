@@ -468,6 +468,59 @@ footer .wrap {
 
 }
 
+/**********************************************/
+.user {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: darkslateblue;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.user a {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: darkseagreen;
+    padding-left: 100px;
+    line-height: 30px;
+}
+
+#gens {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#nav {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+}
+#labell {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+#putput {
+    width: 190px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #1c7430, 1px;
+    background: purple;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+
+}
+
+}
+/**********************************************/
+
 @media screen and (max-width: 700px) {
     .column {
         display:block;

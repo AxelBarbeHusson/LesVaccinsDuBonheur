@@ -37,13 +37,13 @@ if (!empty($_SESSION)){
     }
     ?>
     <form action="" method="post" novalidate class="form-wrap">
-        <label>Ajouter un vaccin à votre carnet :</label>
+        <label id="labell">Ajouter un vaccin à votre carnet :</label>
         <select name="vacccinnns">
             <?php foreach($vaccins as $vaccin) { ?>
                 <option value="<?php echo $vaccin->id; ?>"><?php echo $vaccin->nom;?></option>
             <?php } ?>
         </select>
-        <input type="submit" name="submitted" value="Envoyer">
+        <input id="putput" type="submit" name="submitted" value="Envoyer">
     </form>
 
     <?='</div>'; ?>
