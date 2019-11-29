@@ -24,27 +24,27 @@ if (!empty($_SESSION)){
     $query->execute();
     $vaccins = $query->fetchAll();
     //debug($vaccins);
-    $idvaccin = 0;
     if(!empty($_POST['submitted'])) {
+
+        $idvaccin = trim(strip_tags($_POST['vacccinnns']));
+
         $sql = "INSERT INTO users_vaccins (Id_Users, id) 
-        VALUES ($id, $idvaccin)";
+        VALUES (:iduser, :id)";
         $query = $pdo->prepare($sql);
-        $query->bindValue(':Id_Users', $id, PDO::PARAM_INT);
-        $query->bindValue(':Id_Users', $id, PDO::PARAM_INT);
+        $query->bindValue(':iduser', $id, PDO::PARAM_INT);
+        $query->bindValue(':id', $idvaccin, PDO::PARAM_INT);
         $query->execute();
-        die('insert done');
     }
     ?>
-    <form class="form-wrap">
+    <form action="" method="post" novalidate class="form-wrap">
         <label>Ajouter un vaccin à votre carnet :</label>
-        <select>
+        <select name="vacccinnns">
             <?php foreach($vaccins as $vaccin) { ?>
-                <option><?php $idvaccin=$vaccin->id; echo $vaccin->nom;?></option>
+                <option value="<?php echo $vaccin->id; ?>"><?php echo $vaccin->nom;?></option>
             <?php } ?>
         </select>
-        <input type="submit" name="" value="Envoyer <?php if(isset($_POST['submitted'])) { die('ok'); } ?>">
+        <input type="submit" name="submitted" value="Envoyer">
     </form>
-    <input type="hidden" name="submitted">
 
     <?='</div>'; ?>
 <?php
