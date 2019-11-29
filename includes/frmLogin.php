@@ -2,10 +2,9 @@
 if (!isset($mail)) $mail = "";
 if (!isset($mdp)) $mdp = "";
 ?>
-<section>
-    <img id="imagemedo" src="assets/img/medimg.jpg" alt="">
 
-</section>
+
+
     <form method="post" action="index.php?page=login" class="form-wrap">
         <h2>Login</h2>
         <label for="mail"><b>Email :</b></label>

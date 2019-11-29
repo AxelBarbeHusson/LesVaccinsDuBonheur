@@ -1,3 +1,4 @@
+
 <div class="wrap">
     <section class="cgu">
         <h1>Mentions légales</h1>

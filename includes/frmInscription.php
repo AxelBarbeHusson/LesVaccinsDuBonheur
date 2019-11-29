@@ -7,10 +7,10 @@ if (!isset($mail)) $mail = "";
 if (!isset($role)) $role = "";
 
 ?>
-<section>
-    <img id="imagemedo" src="assets/img/medimg.jpg" alt="">
 
-</section>
+
+
+
 <form method="post" class="form-wrap" action="index.php?page=inscriptions">
     <h2>Inscription</h2>
     <div>

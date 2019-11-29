@@ -51,10 +51,10 @@ if (!empty($_SESSION)){
     $users = $query->fetch();
 
     ?>
-    <section>
-        <img id="imagemedo" src="assets/img/medimg.jpg" alt="">
 
-    </section>
+
+
+
 
         <form class="form-wrap" method="post" action="">
             <fieldset>
