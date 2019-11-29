@@ -28,12 +28,12 @@
                 <li>
                     <a href="index.php?page=addVaccins" ><i class="fa fa-qrcode "></i>Add Vaccins</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="index.php?page=editVaccins"><i class="fa fa-bar-chart-o"></i>Edit Vaccins</a>
                 </li>
                 <li>
                     <a href="index.php?page=editUser"><i class="fa fa-bar-chart-o"></i>Edit Users</a>
-                </li>
+                </li>-->
                 <li>
                     <a href="index.php?page=rendezvousAdmin"><i class="fa fa-bar-chart-o"></i>Rdv Admin</a>
                 </li>
@@ -72,25 +72,14 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                     <div class="div-square">
-                        <a href="index.php?page=backDeleteUser" >
-                            <i class="fa fa-key fa-5x"></i>
-                            <h4>Admin </h4>
+                        <a href="index.php?page=inscriptions" >
+                            <i class="fa fa-user fa-5x"></i>
+                            <h4>Register User</h4>
                         </a>
                     </div>
 
-
-                </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                <div class="div-square">
-                    <a href="index.php?page=inscriptions" >
-                        <i class="fa fa-user fa-5x"></i>
-                        <h4>Register User</h4>
-                    </a>
                 </div>
 
-
-
-            </div>
 
 
             </div>
