@@ -17,7 +17,7 @@ if (!empty($_SESSION)){
     echo '<br>';
     echo '<br>';
     foreach($userVaccins as $userVaccin) {
-        echo '- ' . $userVaccin->nom;
+        echo '<p class="nomVaccin">- ' . $userVaccin->nom . '</p>';
         echo '<br>';
         echo '<br>';
     }
