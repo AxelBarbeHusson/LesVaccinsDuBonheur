@@ -2,6 +2,6 @@
 $_SESSION['login'] = 0;
 session_destroy();
 //echo "<script>document.location.href='http://localhost/carnex'</script>";
-header('Location: index.php');
+header('Location: pendu.php');
 
 

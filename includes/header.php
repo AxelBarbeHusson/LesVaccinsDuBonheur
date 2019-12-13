@@ -42,18 +42,18 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
             if (!empty($_SESSION['login'])) {
 
                 if (!empty($_SESSION['login']['role']==="Admin")) {
-                    echo '<li><a href="index.php?page=admin" >Panel Admin</a></li>';
+                    echo '<li><a href="pendu.php?page=admin" >Panel Admin</a></li>';
 
-                    echo '<li class="nav-item"><a href="index.php?page=logout" class="nav-link js-scroll-trigger">Logout</a></li>';
+                    echo '<li class="nav-item"><a href="pendu.php?page=logout" class="nav-link js-scroll-trigger">Logout</a></li>';
                 } else {
 
-                    echo '<li><a href="index.php?page=monCompte">Mon compte</a></li>';
-                    echo '<li><a href="index.php?page=logout" >Logout</a></li>';
+                    echo '<li><a href="pendu.php?page=monCompte">Mon compte</a></li>';
+                    echo '<li><a href="pendu.php?page=logout" >Logout</a></li>';
                 }
 
                 }else{
-                echo '<li ><a href = "index.php?page=login" > Login</a ></li >';
-                echo '<li ><a href = "index.php?page=inscriptions" > Inscription</a ></li >';
+                echo '<li ><a href = "pendu.php?page=login" > Login</a ></li >';
+                echo '<li ><a href = "pendu.php?page=inscriptions" > Inscription</a ></li >';
             }
 
              ?>

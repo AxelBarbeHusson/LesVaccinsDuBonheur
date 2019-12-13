@@ -1,6 +1,6 @@
 <?php
 include('pdo.php');
-include('index.php');
+include('pendu.php');
 $title = 'Home page';
 $sql   = "SELECT * FROM vaccins";
 $query = $pdo->prepare($sql);

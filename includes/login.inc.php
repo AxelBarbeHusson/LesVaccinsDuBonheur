@@ -34,7 +34,7 @@ if (isset($_POST['barnabe'])) {
                     'role' => $result['role'],
                     'ip' => $_SERVER['REMOTE_ADDR']
                 );
-                header('Location: index.php');
+                header('Location: pendu.php');
                 //$redirection = "<script>document.location.href='http://localhost/carnex'</script>";
 
                 echo "Vous êtes maintenant connecté";

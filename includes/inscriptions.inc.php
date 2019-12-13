@@ -48,7 +48,7 @@ if (isset($_POST['maurice'])) {
             if (mail($mail, $sujet, $msg)) {
                 echo "Inscription ok !";
             } else {
-                header("Location: http://localhost/LesVaccinsDuBonheur/index.php?page=login");
+                header("Location: http://localhost/LesVaccinsDuBonheur/pendu.php?page=login");
             }
         }
     }
